@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Field Hide and Show</title>
+</head>
+<body>
+    <input id="input" type="password" name="name" placeholder="Please type .."/>
+    <button id="flip" onmouseover="show()">Show</button>
+<script>
+let inputType= document.getElementById('input').type;
+
+
+function show(){
+    let buttonText=document.getElementById('flip');
+    buttonText=document.getElementById('flip').innerHTML;
+    if(buttonText === 'Show'){
+        inputTypeUpdated= document.getElementById('input').type="text"
+        document.getElementById('flip').innerHTML="Hide";
+    }
+    else{
+        inputTypeUpdated= document.getElementById('input').type="password"
+        document.getElementById('flip').innerHTML="Show";
+    }
+}
+
+</script>
+</body>
+</html>
